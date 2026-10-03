@@ -29,11 +29,6 @@ jobs:
       - name: Analyze Project
         run: flutter analyze
 
-      - name: Install CocoaPods
-        run: |
-          cd ios
-          pod install
-
       - name: Build iOS App (Unsigned)
         run: flutter build ios --release --no-codesign
 
